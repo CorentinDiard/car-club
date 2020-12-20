@@ -1,0 +1,47 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  year: 1
+  seats: 1
+  transmission: MyString
+  propulsion: MyString
+  mileage: MyString
+  engine: MyString
+  power: 1
+  price_per_day: 1
+  body_style: MyString
+  description: MyText
+  type_name: MyString
+  number_plate: MyString
+  slug: MyString
+  car_grade_given_by_users: 1.5
+  fuel_type: MyString
+  country: MyString
+  locality: MyString
+  region: MyString
+  postcode: MyString
+  address: MyString
+
+two:
+  user: two
+  year: 1
+  seats: 1
+  transmission: MyString
+  propulsion: MyString
+  mileage: MyString
+  engine: MyString
+  power: 1
+  price_per_day: 1
+  body_style: MyString
+  description: MyText
+  type_name: MyString
+  number_plate: MyString
+  slug: MyString
+  car_grade_given_by_users: 1.5
+  fuel_type: MyString
+  country: MyString
+  locality: MyString
+  region: MyString
+  postcode: MyString
+  address: MyString

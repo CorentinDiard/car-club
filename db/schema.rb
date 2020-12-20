@@ -10,10 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_20_171600) do
+ActiveRecord::Schema.define(version: 2020_12_20_174050) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cars", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.integer "year"
+    t.integer "seats"
+    t.string "transmission"
+    t.string "propulsion"
+    t.string "mileage"
+    t.string "engine"
+    t.integer "power"
+    t.integer "price_per_day"
+    t.string "body_style"
+    t.text "description"
+    t.string "type_name"
+    t.string "number_plate"
+    t.string "slug"
+    t.float "car_grade_given_by_users"
+    t.string "fuel_type"
+    t.string "country"
+    t.string "locality"
+    t.string "region"
+    t.string "postcode"
+    t.string "address"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_cars_on_user_id"
+  end
 
   create_table "invitations", force: :cascade do |t|
     t.bigint "user_id", null: false
@@ -37,5 +64,6 @@ ActiveRecord::Schema.define(version: 2020_12_20_171600) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "cars", "users"
   add_foreign_key "invitations", "users"
 end

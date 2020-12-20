@@ -4,9 +4,11 @@ It's an owner search tool
 
 ## Run
 
-Run local server with:
+Run local servers with:
 
-    rails s 
+    rails s
+    
+    ./bin/webpack-dev-server
 
 ## Version
 
