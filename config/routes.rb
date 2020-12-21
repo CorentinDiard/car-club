@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   namespace :api do
-    # api routes here
+    post 'user/create', to: 'user#create' 
+    post 'user/update', to: 'user#update' 
   end
 
   root 'application#index'

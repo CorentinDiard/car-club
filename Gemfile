@@ -22,6 +22,9 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# seriliazer
+gem 'active_model_serializers'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
@@ -41,6 +44,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'rspec-rails'
+  gem 'dotenv-rails'
 end
 
 group :test do
@@ -50,6 +54,7 @@ group :test do
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
   gem 'rspec-rails'
+  gem 'dotenv-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
